@@ -1,0 +1,125 @@
+.home-navigation .menu-logo {
+    position: relative;
+    margin: auto;
+    width: 30%;
+    padding: 15px;
+}
+
+.home-navigation .menu-logo img {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: auto;
+}
+
+.home-navigation ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-navigation li {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.home-navigation ul a {
+    color: black;
+}
+
+.home-navigation ul a:hover {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.content {
+    background: #EDF3F3;
+    margin-top: 15px;
+    padding: 70px 0px 40px;
+}
+
+.content .articles {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.content .articles .col-lg-4 {
+    margin-bottom: 30px;
+}
+
+.content .articles .card {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+}
+
+.content .articles .card .article-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.content .articles .card p{
+    margin-bottom: 2.5rem;
+}
+
+.content .articles .card .article-footer > li:first-child{
+    float: left;
+}
+
+.content .articles .card .article-footer > li {
+    width: 50%;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    background: #EDF3F3;
+    line-height: 45px;
+    font-size: 12px;
+}
+
+.content .articles .article-footer svg {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: .6;
+    font-size: 1.1em;
+}
+
+.content .page {
+    width: 80%;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.content .article .title {
+    padding: 30px 30px 15px 30px;
+}
+
+.content .article img {
+    width: 100%;
+    height: 250px;
+}
+
+.content .article .body {
+    padding: 30px 30px 0 30px;
+}
+
+.content .article .author {
+    padding: 30px;
+}
+
+.content .static .title {
+    padding: 30px 30px 0 30px;
+}
+
+.content .static .body {
+    padding: 15px 30px 0 30px;
+}

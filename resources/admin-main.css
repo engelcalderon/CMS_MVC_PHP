@@ -1,0 +1,95 @@
+body {
+    background-color: #f9fafb;
+}
+
+.login-signup-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 320px;
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.login-signup-container .title {
+    margin-bottom: 45px;
+}
+
+.login-signup-container form label {
+    font-size: 12px;
+    color: gray;
+}
+
+.login-signup-container .inputValue {
+    width: 100%;
+    border: 1px solid #ced4da;
+}
+
+.login-signup-container .message {
+    font-size: 12px;
+    color: gray;
+}
+
+.page-content {
+    padding-left: 280px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.navigation {
+    background: white;
+    border-right: 1px solid rgba(0,0,0,.0625);
+    width: 280px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    margin-top: 15px;
+}
+
+.navigation li svg {
+    margin-right: 15px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    padding: 5px 15px;
+    display: block;
+}
+
+.navigation li a:hover {
+    color: black;
+}
+
+.container {
+    background: white;
+    border: 1px solid rgba(0,0,0,.0625);
+    padding: 30px;
+}
+
+.table {
+    width: 100%;
+}
+
+.container .newpost-btn {
+    margin-bottom: 15px;
+}
+
+.container .post .inputValue {
+    width: 100%;
+}
