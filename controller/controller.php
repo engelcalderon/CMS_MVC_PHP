@@ -19,6 +19,12 @@ class MvcController {
             $route = $_GET["admin"];
             $view = Routes::adminRoutes($route);
             include $view;
+            // call just one time that why I verify that is not in the login page or signup page
+            // session was started in index
+            if (!$_SESSION["logged"] && $_GET["admin"] != "login" && $_GET["admin"] != "signup") {
+                header("location:index.php?admin=login");
+                exit();
+            }
         } else {
             $view = Routes::userRoutes("index");
             include $view;
@@ -81,7 +87,6 @@ class MvcController {
             $request = Model::signupUserModel($data, "users");
 
             if ($request == "success") {
-                session_start();
                 $_SESSION["logged"]= true;
                 header("location:index.php?admin=login");
             } else {
@@ -106,12 +111,10 @@ class MvcController {
             $request = Model::loginUserModel($data, "users");
 
             if ($_POST["password"] == $request["password"]) {
-                session_start();
                 $_SESSION["logged"]= true;
                 $_SESSION["current-user"] = $request["id"];
                 header("location:index.php?admin=dashboard");
             } else {
-                session_start();
                 $_SESSION["logged"]= false;
                 $_SESSION["current-user"] = NULL;
                 echo '
@@ -126,8 +129,6 @@ class MvcController {
 
     public function userLogOutController() {
         if (isset($_GET["logout"])) {
-            echo "work";
-            session_start();
             if ($_SESSION["logged"]) {
                 $_SESSION["logged"] = false;
                 $_SESSION["current-user"] = NULL;
@@ -142,7 +143,6 @@ class MvcController {
     public function createPostController() {
         if(isset($_POST["title"]) && isset($_POST["content"])) {
 
-            session_start();
             $currentUser = $_SESSION["current-user"];
             $data = array(
                 "title"=>$_POST["title"],
@@ -227,7 +227,6 @@ class MvcController {
 
     public function userSettingsController() {
         
-        session_start();
         $request = Model::usersSettingsModel($_SESSION["current-user"]);
         
         echo '
