@@ -68,6 +68,22 @@
     color: #ccedff;
 }
 
+.banner-slide .banner-text {
+    position:absolute; 
+    width:50%; 
+    margin: auto; 
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #2c465f;
+}
+
 .content {
     background: #EDF3F3;
     padding: 70px 0px 40px;
