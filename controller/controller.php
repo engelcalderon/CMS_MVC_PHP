@@ -67,7 +67,7 @@ class MvcController {
 
             echo '
                 <h3 class="title">'.$request["title"].'</h3>
-                <img src="resources/images/article-card.svg"/>
+                <img src="resources/images/article-banner.jpeg"/>
                 <p class="body">'.$request["content"].'</p>
                 <span class="author">Author: '.$request["author"].'</span>
             ';

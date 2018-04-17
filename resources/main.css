@@ -42,14 +42,14 @@
 }
 
 .main-menu {
-    background: black;
+    background: #228ae6;
 }
 
 .home-navigation ul {
     list-style: none;
     padding: 0;
     position: relative;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
 }
@@ -65,12 +65,11 @@
 
 .home-navigation .main-menu ul a:hover {
     text-decoration: none;
-    color: burlywood;
+    color: #ccedff;
 }
 
 .content {
     background: #EDF3F3;
-    margin-top: 15px;
     padding: 70px 0px 40px;
 }
 
@@ -123,7 +122,7 @@
 }
 
 .content .page {
-    width: 80%;
+    width: 75%;
     background: white;
     border: 1px solid #ddd;
     box-shadow: 0px 0px 5px rgba(0,0,0,.1);
