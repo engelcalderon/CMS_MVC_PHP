@@ -23,6 +23,8 @@
         $mvc = new MvcController();
         $mvc->manageRoutes();
         echo '</div>';
+
+        include "footer.php";
     ?>
 </body>
 </html>

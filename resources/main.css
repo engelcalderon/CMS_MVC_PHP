@@ -41,6 +41,10 @@
     margin: auto;
 }
 
+.main-menu {
+    background: black;
+}
+
 .home-navigation ul {
     list-style: none;
     padding: 0;
@@ -53,11 +57,10 @@
 .home-navigation .main-menu li {
     display: inline-block;
     padding: 15px;
-    border: 1px solid #eee;
 }
 
 .home-navigation .main-menu ul a {
-    color: black;
+    color: white;
 }
 
 .home-navigation .main-menu ul a:hover {
@@ -151,4 +154,37 @@
 
 .content .static .body {
     padding: 15px 30px 0 30px;
+}
+
+.footer {
+    padding: 15px;
+    background: #495057;
+}
+
+.footer .row {
+    width: 75%;
+    margin: auto;
+}
+
+.footer .col-8 {
+    text-align: right;
+}
+
+.footer .footer-credits {
+    color: #848d95;
+    font-size: 12px;
+}
+
+.footer .footer-navigation li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer .footer-navigation li:last-child {
+    padding: 0;
+}
+
+.footer .footer-navigation li a {
+    color: #848d95;
+    font-size: 12px;
 }
