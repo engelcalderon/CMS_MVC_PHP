@@ -1,5 +1,4 @@
 <h4>New Post</h4>
-
 <div class="container col-md-12">
 <form class="post" method="post" id="newPost">
 <h5>Title</h5>

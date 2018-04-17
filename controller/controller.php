@@ -21,7 +21,7 @@ class MvcController {
             include $view;
             // call just one time that why I verify that is not in the login page or signup page
             // session was started in index
-            if (!$_SESSION["logged"] && $_GET["admin"] != "login" && $_GET["admin"] != "signup") {
+            if (!isset($_SESSION["logged"]) && $_GET["admin"] != "login" && $_GET["admin"] != "signup") {
                 header("location:index.php?admin=login");
                 exit();
             }
@@ -136,7 +136,6 @@ class MvcController {
             } else {
                 header("location:index.php?admin=login");
             }
-
         }
     }
 

@@ -17,6 +17,7 @@
 </head>
 <body>
     <?php
+       
         session_start();
         if ($_GET["admin"] != "login" && $_GET["admin"] != "signup") {
             include "views/admin/navigation.php";

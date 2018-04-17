@@ -12,7 +12,7 @@
     margin: auto;
 }
 
-.home-navigation ul {
+.home-navigation .main-menu ul {
     list-style: none;
     padding: 0;
     position: relative;
@@ -21,17 +21,17 @@
     text-align: center;
 }
 
-.home-navigation li {
+.home-navigation .main-menu li {
     display: inline-block;
     padding: 15px;
     border: 1px solid #eee;
 }
 
-.home-navigation ul a {
+.home-navigation .main-menu ul a {
     color: black;
 }
 
-.home-navigation ul a:hover {
+.home-navigation .main-menu ul a:hover {
     text-decoration: none;
     color: burlywood;
 }
