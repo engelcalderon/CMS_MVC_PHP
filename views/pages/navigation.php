@@ -1,9 +1,9 @@
 <div class="home-navigation">
 
-    <div class="top-navigation">
+    <div class="top-menu">
         <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">SignUp</a></li>
+            <li><a href="index.php?admin=dashboard"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            <li><a href="index.php?admin=signup"><i class="fas fa-user-plus"></i>Sign up</a></li>
         <ul>
     </div>
 
@@ -17,7 +17,6 @@
 <li class="menu-item"><a href="#">Services</a></li>
 <li class="menu-item"><a href="#">Portfolio</a></li>
 <li class="menu-item"><a href="#">Contact</a></li>
-<li class="menu-item"><a href="index.php?admin=dashboard">Dashboard</a></li>
 </ul>
 </div>
 
